@@ -1,0 +1,64 @@
+/* ModalMovie.css */
+
+.modal-content {
+    background-color: #481E14;
+    color: #FFFFFF;
+}
+
+.modal-header {
+    border-bottom: 1px solid #9B3922;
+    background-color: #481E14;
+    color: #FFFFFF;
+}
+
+.modal-title {
+    color: #FFFFFF;
+}
+
+.modal-body {
+    background-color: #481E14;
+    color: #FFFFFF;
+}
+
+.modal-footer {
+    border-top: 1px solid #9B3922;
+    background-color: #481E14;
+    color: #FFFFFF;
+}
+
+.modal-body h5 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-body img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.modal-body textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    margin-top: 10px;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #F2613F;
+    border-color: #F2613F;
+}
+
+.modal-footer .btn-primary {
+    background-color: #9B3922;
+    border-color: #9B3922;
+}
+
+.modal-footer .btn-secondary:hover,
+.modal-footer .btn-primary:hover {
+    background-color: #481E14;
+    border-color: #481E14;
+}
