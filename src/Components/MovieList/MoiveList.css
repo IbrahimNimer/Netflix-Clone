@@ -1,0 +1,11 @@
+/* MovieList.css */
+.movie-list-container {
+    text-align: center;
+    background-color: #0C0C0C;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.movie-list-container h2 {
+    margin-bottom: 20px;
+}
