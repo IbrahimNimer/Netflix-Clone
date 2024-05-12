@@ -1,4 +1,4 @@
-// Import useState for managing the updated comment
+
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card, Button, Form} from 'react-bootstrap';
 import './FavList.css'; 
@@ -34,12 +34,11 @@ function FavList() {
             body: JSON.stringify(updatedMovie)
         }).then(response => {
             if (response.ok) {
-                // If the update was successful, update the local state
+              
                 setMovies(prevMovies => prevMovies.map(m => (m.id === movieId ? updatedMovie : m)));
             }
         });
     };
-
     const handleDelete = async (movieId) => {
         const apiUrl=process.env.REACT_APP_API_URL
         const serverURL = `${apiUrl}/DELETE/${movieId}`;
@@ -49,7 +48,6 @@ function FavList() {
             setMovies(prevMovies => prevMovies.filter(movie => movie.id !== movieId));
         }
     };
-
     const toggleShowMore = (movieId) => {
         setMovies(prevMovies =>
             prevMovies.map(movie =>
@@ -57,7 +55,6 @@ function FavList() {
             )
         );
     };
-
     return (
         <div className="favlist-container">
     <h2 className="favlist-title">Favorite Movies</h2>
