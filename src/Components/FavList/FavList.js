@@ -1,4 +1,4 @@
-
+//Lab 19
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card, Button, Form} from 'react-bootstrap';
 import './FavList.css'; 
@@ -8,8 +8,10 @@ function FavList() {
         sendReq();
     }, []);
 
+
+    
     const [movies, setMovies] = useState([]);
-    const [updatedComment, setUpdatedComment] = useState(""); // State for the updated comment
+    const [updatedComment, setUpdatedComment] = useState(""); 
 
     const sendReq = async () => {
         const apiUrl=process.env.REACT_APP_API_URL
