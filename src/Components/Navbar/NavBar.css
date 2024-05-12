@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #F2613F;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.5em; /* Increase logo size */
+  font-weight: bold; /* Make logo bold */
+  text-transform: uppercase; /* Uppercase logo text */
+  letter-spacing: 1px; /* Add letter spacing */
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+  font-weight: bold; /* Make nav links bold */
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #9B3922;
+}
+
