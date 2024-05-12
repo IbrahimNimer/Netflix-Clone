@@ -1,11 +1,97 @@
 /* MovieList.css */
-.movie-list-container {
-    text-align: center;
+
+.movie-list-container,
+.home-container {
     background-color: #0C0C0C;
     color: #FFFFFF;
     padding: 20px;
+    text-align: center;
 }
 
-.movie-list-container h2 {
+.movie-list-container h1,
+.home-container h1 {
     margin-bottom: 20px;
+}
+
+.movie-card {
+    background-color: #481E14;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.movie-card:last-child {
+    margin-right: 0; 
+}
+
+.movie-card .card-body {
+    padding: 0; 
+    text-align: center; 
+}
+
+.movie-card .card-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px; 
+}
+
+.movie-card .card-text {
+    font-size: 0.9em;
+    margin-bottom: 10px; 
+}
+
+.movie-card .btn-primary {
+    background-color: #F2613F;
+    border-color: #F2613F;
+    margin-top: 10px;
+}
+
+.movie-card .btn-primary:hover {
+    background-color: #9B3922;
+    border-color: #9B3922;
+}
+
+.movie-card .card-text .btn-link {
+    color: #F2613F;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.movie-card .card-text .btn-link:hover {
+    text-decoration: underline;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.home-container h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    background-color: #F2613F;
+    color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.movie-card:hover {
+    background-color: #9B3922;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }

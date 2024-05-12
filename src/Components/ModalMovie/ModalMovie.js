@@ -7,7 +7,8 @@ function ModalMovie({ showModal, handleModalClose, selectedMovie, comment, setCo
     const handleSaveToFavorites = async () => {
         try {
             // Send a POST request to the addMovie endpoint with the data from the modal
-            await axios.post('http://localhost:3000/addMovies', {
+            const apiUrl=process.env.REACT_APP_API_URL
+            await axios.post(`${apiUrl}/addMovies`, {
                 original_title: selectedMovie.title,
                 release_date: selectedMovie.release_date,
                 poster_path: selectedMovie.image,

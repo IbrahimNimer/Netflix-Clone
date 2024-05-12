@@ -1,0 +1,94 @@
+.favlist-container {
+    background-color: #0C0C0C;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.favlist-title {
+    margin-bottom: 20px;
+}
+
+.favlist-card {
+    background-color: #481E14;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.favlist-card:last-child {
+    margin-right: 0;
+}
+
+.favlist-card .card-body {
+    padding: 0;
+    text-align: center;
+}
+
+.favlist-card .card-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.favlist-card .card-text {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+.comment-box {
+    margin-top: 10px;
+}
+
+.favlist-card .btn-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.favlist-card .btn-primary,
+.favlist-card .btn-danger {
+    flex: 1;
+    margin: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: #F44336; /* Set default color to #F44336 */
+    border-color: #F44336;
+}
+
+.favlist-card .btn-primary:hover {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.favlist-card .btn-danger:hover {
+    background-color: red;
+    border-color: red;
+}
+
+.favlist-card .card-text .btn-link {
+    color: #F2613F;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.favlist-card .card-text .btn-link:hover {
+    text-decoration: underline;
+}
+
+.favlist-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
